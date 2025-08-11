@@ -1,0 +1,179 @@
+ :root {
+            --color1: #031F46;
+            --color2: #0499C9;
+            --color3: #16B270;
+            --color4: #FABF03;
+            --color5: #F45015;
+            --color6: #FFBD37;
+            --color7: #FE7131;
+            --color8: #FE7831;
+            --color9: #F4E3C9;
+            --color10: #0B628F;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--color1), var(--color2));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        
+        .logo span {
+            font-size: 1.5rem;
+            margin-left: 1rem;
+        }
+        
+        .slogan {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        
+        .campus {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .week-days {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .day-tab {
+            padding: 0.8rem 1.5rem;
+            background-color: var(--color9);
+            border-radius: 20px 20px 0 0;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin: 0.2rem;
+        }
+        
+        .day-tab:hover, .day-tab.active {
+            background-color: var(--color3);
+            color: white;
+        }
+        
+        .day-content {
+            display: none;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .day-content.active {
+            display: block;
+        }
+        
+        .activities {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .activity-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-header {
+            padding: 1rem;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .card-body {
+            padding: 1rem;
+        }
+        
+        .card-time {
+            font-weight: bold;
+            color: var(--color1);
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--color1);
+        }
+        
+        .card-description {
+            margin-bottom: 1rem;
+            color: #555;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background-color: var(--color5);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--color7);
+        }
+        
+        footer {
+            background-color: var(--color1);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .week-days {
+                flex-direction: column;
+            }
+            
+            .day-tab {
+                border-radius: 0;
+                margin: 0;
+            }
+            
+            .activities {
+                grid-template-columns: 1fr;
+            }
+        }

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMANA U 2025 - Campus Sarapiqui</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>SEMANA <span>U 2025</span></h1>
+        </div>
+        <div class="slogan">Todos somos ASO</div>
+        <div class="campus">Campus Sarapiqui</div>
+    </header>
+    
+     <!-- <div class="header-container">
+        <div class="logo-container">
+             Aquí iría tu imagen de logo SEMANA U 2025 -->
+            <!-- <img src="img/Sheet 5.png" alt="SEMANA U 2025" class="logo-image">
+            <div class="logo-text">
+                <h1>SEMANA <span class="year">U 2025</span></h1>
+            </div>
+        </div> -->
+        
+        <!-- <div class="slogan-container">
+           Aquí iría tu imagen de "Todos somos ASO Campus Sarapiqui" -->
+            <!-- <img src="img/Negro Fondo Blanco.jpg" alt="Todos somos ASO Campus Sarapiqui" class="slogan-image">
+        </div> --> 
+    <!-- </div> --> 
+    <div class="container">
+        <div class="week-days">
+            <div class="day-tab active" onclick="showDay('lunes')">Lunes</div>
+            <div class="day-tab" onclick="showDay('martes')">Martes</div>
+            <div class="day-tab" onclick="showDay('miercoles')">Miércoles</div>
+            <div class="day-tab" onclick="showDay('jueves')">Jueves</div>
+            <div class="day-tab" onclick="showDay('viernes')">Viernes</div>
+        </div>
+        
+        <div id="lunes" class="day-content active">
+            <h2>Actividades - Lunes</h2>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #0499C9;">
+                        Conferencia Inaugural
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">9:00 AM - 11:00 AM</div>
+                        <h3 class="card-title">Apertura de la Semana U 2025</h3>
+                        <p class="card-description">Ceremonia de inauguración con autoridades universitarias y presentación del programa de actividades.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #16B270;">
+                        Taller
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">1:00 PM - 3:00 PM</div>
+                        <h3 class="card-title">Innovación Tecnológica</h3>
+                        <p class="card-description">Taller práctico sobre las últimas tendencias en tecnología aplicada a tu campo de estudio.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #F45015;">
+                        Cultural
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">4:00 PM - 6:00 PM</div>
+                        <h3 class="card-title">Presentación Artística</h3>
+                        <p class="card-description">Espectáculo de danza y música organizado por los grupos culturales del campus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="martes" class="day-content">
+            <h2>Actividades - Martes</h2>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #FABF03;">
+                        Charla
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">10:00 AM - 12:00 PM</div>
+                        <h3 class="card-title">Oportunidades Laborales</h3>
+                        <p class="card-description">Expertos comparten información sobre el mercado laboral y cómo prepararte para él.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #FFBD37;">
+                        Competencia
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">2:00 PM - 5:00 PM</div>
+                        <h3 class="card-title">Hackathon Universitario</h3>
+                        <p class="card-description">Competencia de desarrollo de soluciones tecnológicas en equipo.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="miercoles" class="day-content">
+            <h2>Actividades - Miércoles</h2>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #FE7131;">
+                        Taller
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">9:00 AM - 12:00 PM</div>
+                        <h3 class="card-title">Emprendimiento Social</h3>
+                        <p class="card-description">Aprende a desarrollar proyectos con impacto positivo en la comunidad.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #031F46;">
+                        Deportes
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">3:00 PM - 6:00 PM</div>
+                        <h3 class="card-title">Torneo Intercarreras</h3>
+                        <p class="card-description">Competencias deportivas entre las diferentes carreras del campus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="jueves" class="day-content">
+            <h2>Actividades - Jueves</h2>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #F4E3C9; color: #333;">
+                        Exposición
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">Todo el día</div>
+                        <h3 class="card-title">Proyectos Estudiantiles</h3>
+                        <p class="card-description">Muestra de los mejores trabajos y proyectos desarrollados por estudiantes.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #FE7831;">
+                        Conversatorio
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">4:00 PM - 6:00 PM</div>
+                        <h3 class="card-title">Liderazgo Juvenil</h3>
+                        <p class="card-description">Diálogo con jóvenes líderes sobre cómo impactar positivamente en la sociedad.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="viernes" class="day-content">
+            <h2>Actividades - Viernes</h2>
+            <div class="activities">
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #16B270;">
+                        Cierre
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">10:00 AM - 12:00 PM</div>
+                        <h3 class="card-title">Ceremonia de Clausura</h3>
+                        <p class="card-description">Entrega de reconocimientos y palabras de cierre de las autoridades.</p>
+                    </div>
+                </div>
+                
+                <div class="activity-card">
+                    <div class="card-header" style="background-color: #F45015;">
+                        Fiesta
+                    </div>
+                    <div class="card-body">
+                        <div class="card-time">6:00 PM - 12:00 AM</div>
+                        <h3 class="card-title">Gran Fiesta de Cierre</h3>
+                        <p class="card-description">Celebración con música, comida y sorpresas para cerrar con broche de oro.</p>
+                        <a href="#" class="btn">Inscripción</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 SEMANA U - Campus Sarapiqui | Todos somos ASO</p>
+    </footer>
+    
+    <script>
+        function showDay(day) {
+            // Ocultar todos los contenidos de día
+            document.querySelectorAll('.day-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Desactivar todas las pestañas
+            document.querySelectorAll('.day-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Mostrar el día seleccionado
+            document.getElementById(day).classList.add('active');
+            
+            // Activar la pestaña correspondiente
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
