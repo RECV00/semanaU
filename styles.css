@@ -15,7 +15,8 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, var(--color1), var(--color10));
+    background-image: url("img/confeti.gif"); 
+    /* background: linear-gradient(135deg, var(--color1), var(--color10)); */
     color: #333;
     
 }
@@ -81,7 +82,7 @@ body {
     padding: 22px 1.5rem;
     max-width: 1200px;
     margin-bottom: 6rem;
-    background-color: #ffffff1a;
+    background-color: #ffffff;
 }
 
 .week-days {
