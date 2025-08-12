@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEMANA U 2025 - Campus Sarapiqui</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>SEMANA <span>U 2025</span></h1>
+  <header class="header-gradient text-white py-2 shadow">
+        <div class="container">
+        <div class="row align-items-center">
+        <!-- Logo izquierdo -->
+        <div class="col-md-4">
+            <img src="img/Sheet 5.png" alt="SEMANA U 2025 UNA" class="img-fluid main-logo">
         </div>
-        <div class="slogan">Todos somos ASO</div>
-        <div class="campus">Campus Sarapiqui</div>
-    </header>
-    
-     <!-- <div class="header-container">
-        <div class="logo-container">
-             Aquí iría tu imagen de logo SEMANA U 2025 -->
-            <!-- <img src="img/Sheet 5.png" alt="SEMANA U 2025" class="logo-image">
-            <div class="logo-text">
-                <h1>SEMANA <span class="year">U 2025</span></h1>
-            </div>
-        </div> -->
         
-        <!-- <div class="slogan-container">
-           Aquí iría tu imagen de "Todos somos ASO Campus Sarapiqui" -->
-            <!-- <img src="img/Negro Fondo Blanco.jpg" alt="Todos somos ASO Campus Sarapiqui" class="slogan-image">
-        </div> --> 
-    <!-- </div> --> 
-    <div class="container">
+        <!-- Logo derecho -->
+        <div class="col-md-4">
+            <img src="img/Blanco sin fondo .PNG" alt="Todos somos ASO Campus Sarapiqui" class="img-fluid slogan-logo">
+        </div>
+        
+        <!-- Título centrado -->
+        <div class="col-md-12 text-center mt-3">
+            <div class="header-bottom">
+                <h1 class="m-0 event-title">SEMANA <span class="highlight">U 2025</span></h1>
+            </div>
+        </div>
+    </div>
+    </div>
+  </header>
+    
+        <!-- Contenido principal -->
+    <div class="container main-container">
         <div class="week-days">
             <div class="day-tab active" onclick="showDay('lunes')">Lunes</div>
             <div class="day-tab" onclick="showDay('martes')">Martes</div>
@@ -38,7 +41,7 @@
             <div class="day-tab" onclick="showDay('viernes')">Viernes</div>
         </div>
         
-        <div id="lunes" class="day-content active">
+        <div id="lunes" class="day-content active text-white"> 
             <h2>Actividades - Lunes</h2>
             <div class="activities">
                 <div class="activity-card">
@@ -191,12 +194,46 @@
             </div>
         </div>
     </div>
-    
-    <footer>
-        <p>© 2025 SEMANA U - Campus Sarapiqui | Todos somos ASO</p>
-    </footer>
-    
+   
+   <footer class="footer-bg text-white py-5 mt-4">
+    <div class="container">
+      <!-- Texto centrado -->
+      <div class="row mb-1">
+        <div class="col-12 text-center">
+          <p class="m-0 copyright-text">© 2025 SEMANA U - Campus Sarapiqui | Todos somos ASO</p>
+          <p class="m-0">Organizado por ASOECAS</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <!-- Información de contacto alineada a la izquierda -->
+        <div class="col-md-6">
+          <div class="footer-contact">
+            <div class="contact-item">
+              <span class="contact-label">Teléfono:</span>
+              <span class="contact-value">2562 6056</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Correo:</span>
+              <span class="contact-value">asoecas@una.cr</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Logo alineado a la derecha -->
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <div class="footer-logo">
+            <img src="img/Blanco sin fondo.PNG" alt="Logo ASO">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
+
         function showDay(day) {
             // Ocultar todos los contenidos de día
             document.querySelectorAll('.day-content').forEach(content => {
