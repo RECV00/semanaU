@@ -13,10 +13,11 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
+    margin: -7px;
     padding: 0;
     background-image: url("img/confeti.gif"); 
     /* background-image: url("img/confeti-static.jpg");  */
+    /* background-repeat: no-repeat; */
     /* background: linear-gradient(135deg, var(--color1), var(--color10)); */
     color: #333;
     
@@ -81,7 +82,7 @@ body {
 
 /* ----------------- CONTENIDO PRINCIPAL ----------------- */
 .main-container {
-    padding: 22px 1.5rem;
+    padding: 39px 1.5rem;
     max-width: 1200px;
     margin-bottom: 6rem;
     background-color: #ffffff;
@@ -264,59 +265,30 @@ body {
     opacity: 1;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .event-title {
-        font-size: 2rem;
-    }
-    
-    .highlight {
-        font-size: 1.5rem;
-    }
-    
-    .week-days {
-        flex-direction: column;
-    }
-    
-    .day-tab {
-        border-radius: 4px;
-        margin-bottom: 0.5rem;
-    }
-    
-    .footer-contact {
-        margin-bottom: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .event-title {
-        font-size: 1.8rem;
-    }
-    
-    .highlight {
-        font-size: 1.3rem;
-    }
-}
-/* ----------------- RESPONSIVE DESIGN ----------------- */
+/* ----------------- HEADER RESPONSIVE MEJORADO ----------------- */
 @media (max-width: 768px) {
     .header-gradient {
-        padding-top: 40px; /* Menor espacio para móviles */
+        padding-top: 30px;
+        min-height: 100px;
     }
     
     .main-logo {
-        height: 100px; /* Logo más pequeño */
-        top: -20px; /* Menor desplazamiento */
-        left: 10px;
+        height: 80px;
+        top: 10px;
+        left: 12px;
+        margin-top: 47px;
     }
     
     .slogan-logo {
-        height: 80px; /* Logo más pequeño */
-        top: -15px; /* Menor desplazamiento */
-        right: 10px;
+        height: 60px;
+        top: 15px;
+        right: 15px;
+        margin-top: 47px;
     }
     
     .event-title {
-        font-size: 1.5rem; /* Título más pequeño */
+        font-size: 1.5rem;
+        margin-top: 20px;
     }
     
     .highlight {
@@ -324,7 +296,7 @@ body {
     }
     
     .header-bottom {
-        margin-top: 10px; /* Menor margen */
+        margin-top: 50px;
         padding: 0.5rem 0;
     }
 }
@@ -333,65 +305,47 @@ body {
 @media (max-width: 768px) {
     .main-container {
         padding: 15px 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 80px;
     }
     
     .week-days {
-        flex-direction: row; /* Mantenemos en fila pero con scroll */
-        overflow-x: auto; /* Permite scroll horizontal */
-        white-space: nowrap; /* Evita saltos de línea */
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
         margin-bottom: 1.5rem;
-        -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
-        padding-bottom: 10px; /* Espacio para scroll */
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
     }
     
     .day-tab {
-        min-width: 100px; /* Más estrechos */
-        padding: 0.6rem 1rem;
+        min-width: 90px;
+        padding: 0.6rem 0.8rem;
         font-size: 0.9rem;
-        display: inline-block; /* Para el scroll horizontal */
-        flex: none; /* Anula el flex para el scroll */
-        border-radius: 20px; /* Completamente redondeado */
-        margin-right: 5px; /* Espacio entre tabs */
-    }
-    
-    .day-content {
-        padding: 1.2rem;
-    }
-    
-    .activities {
-        grid-template-columns: 1fr; /* Una columna en móvil */
-        gap: 1.2rem;
-    }
-    
-    .activity-card {
-        border-radius: 10px;
-    }
-    
-    .card-title {
-        font-size: 1.1rem;
-    }
-    
-    .card-description {
-        font-size: 0.9rem;
+        display: inline-block;
+        flex: none;
+        border-radius: 20px;
+        margin-right: 5px;
     }
 }
 
-/* ----------------- FOOTER RESPONSIVE ----------------- */
+/* ----------------- FOOTER RESPONSIVE MEJORADO ----------------- */
 @media (max-width: 768px) {
     .footer-bg {
-        padding: 25px 0;
-        margin-top: 40px;
+        padding: 20px 0;
+        margin-top: 30px;
+        display: block;
     }
     
     .footer-contact {
-        margin-top: 0; /* Eliminamos el margen negativo */
+        margin-top: 0;
         margin-bottom: 1rem;
+        align-items: center;
     }
     
     .footer-logo img {
         height: 50px;
-        margin-top: 0; /* Eliminamos el margen negativo */
+        margin: 10px auto;
+        display: block;
     }
     
     .copyright-text {
@@ -400,32 +354,25 @@ body {
     
     .contact-item {
         font-size: 0.9rem;
-    }
-    
-    .row {
-        flex-direction: column;
-    }
-    
-    .col-md-6 {
-        width: 100%;
-        text-align: center !important;
-    }
-    
-    .text-md-end {
-        text-align: center !important;
+        justify-content: center;
     }
 }
 
-/* Pequeños ajustes para pantallas muy pequeñas */
+/* ----------------- AJUSTES ESPECÍFICOS PARA PANTALLAS MUY PEQUEÑAS ----------------- */
 @media (max-width: 480px) {
+    .header-gradient {
+        min-height: 90px;
+        padding-top: 15px;
+    }
+    
     .main-logo {
-        height: 80px;
-        top: -15px;
+        height: 70px;
+        top: 5px;
     }
     
     .slogan-logo {
-        height: 60px;
-        top: -10px;
+        height: 50px;
+        top: 10px;
     }
     
     .event-title {
@@ -436,9 +383,13 @@ body {
         font-size: 1rem;
     }
     
+    .header-bottom {
+        margin-top: 40px;
+    }
+    
     .day-tab {
         min-width: 80px;
-        padding: 0.5rem 0.8rem;
+        padding: 0.5rem;
         font-size: 0.8rem;
     }
     
