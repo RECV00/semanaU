@@ -16,6 +16,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("img/confeti.gif"); 
+    /* background-image: url("img/confeti-static.jpg");  */
     /* background: linear-gradient(135deg, var(--color1), var(--color10)); */
     color: #333;
     
