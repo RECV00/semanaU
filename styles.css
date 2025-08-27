@@ -16,10 +16,14 @@ body {
     margin: -7px;
     padding: 0;
     background-image: url("img/confeti.gif"); 
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: auto;
     /* background-image: url("img/confeti-static.jpg");  */
     /* background-repeat: no-repeat; */
     /* background: linear-gradient(135deg, var(--color1), var(--color10)); */
     color: #333;
+    min-height: 100vh;
     
 }
 
