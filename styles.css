@@ -282,17 +282,17 @@ body {
     }
     
     .main-logo {
-        height: 80px;
+        height: 85px;
         top: 10px;
         left: 12px;
         margin-top: 47px;
     }
     
     .slogan-logo {
-        height: 60px;
+        height: 70px;
         top: 15px;
         right: 15px;
-        margin-top: 47px;
+        margin-top: 43px;
     }
     
     .event-title {
@@ -375,7 +375,7 @@ body {
     }
     
     .main-logo {
-        height: 70px;
+        height: 80px;
         top: 5px;
     }
     
