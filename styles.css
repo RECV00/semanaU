@@ -65,7 +65,6 @@ body {
 
 }
    
-
 .header-bottom {
     padding: 1rem 0;
     background-color: rgba(255, 255, 255, 0.1);
@@ -290,14 +289,14 @@ body {
     
     .main-logo {
         height: 85px;
-        top: 10px;
+        top: -40px;
         left: 12px;
         margin-top: 47px;
     }
     
     .slogan-logo {
         height: 70px;
-        top: 15px;
+        top: -40px;
         right: 15px;
         margin-top: 43px;
     }
@@ -313,8 +312,14 @@ body {
     
     .header-bottom {
         padding-top: 20px;
-        margin-top: 50px;
+        margin-top: 0;
         padding: 0.5rem 0;
+        order: -1;
+    }
+
+     .row.align-items-center {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
