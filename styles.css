@@ -212,6 +212,7 @@ body {
     margin-bottom: 1.5rem;
     color: #555;
     line-height: 1.6;
+    /* padding: 0px 0px; */
 }
 
 .btn {
