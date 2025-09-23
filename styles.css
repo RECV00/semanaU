@@ -18,13 +18,13 @@ body {
     font-family: 'Arial', sans-serif;
     margin: -7px;
     padding: 0;
-    background-image: url("img/confeti.gif"); 
+    /* background-image: url("img/confeti.gif");  */
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: auto;
     /* background-image: url("img/confeti-static.jpg");  */
     /* background-repeat: no-repeat; */
-    /* background: linear-gradient(135deg, var(--color1), var(--color10)); */
+    background: linear-gradient(135deg, var(--color1), var(--color10));
     color: #333;
     
 }
@@ -139,6 +139,7 @@ body {
 .day-content.active h2 {
     /* color: white; */
     font-weight: bold;
+    color: white;
 }
 
 @keyframes fadeIn {
@@ -377,6 +378,7 @@ body {
     .contact-item {
         font-size: 0.9rem;
         justify-content: center;
+        padding: 8px 8px;
     }
 }
 
