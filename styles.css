@@ -391,13 +391,15 @@ body {
     }
     
     .main-logo {
-        height: 80px;
-        top: -40px;
+        height: 102px;
+        top: -50px;
+        margin-left: -15px;
     }
     
     .slogan-logo {
-        height: 50px;
-        top: -30px;
+        height: 80px;
+        top: -50px;
+        margin-left: -18px;
     }
     
     .event-title {
